@@ -1,3 +1,54 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid darkblue;
+}
+.a {
+  min-height: 100px;
+}
+
+.b {
+  min-height: 500px;
+}
+
+.c {
+  min-height: 100px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .a {
+    flex-basis: 100%;
+  }
+
+  .b {
+    flex-basis: 74.5%;
+  }
+
+  .c {
+    flex-basis: 24.5%;
+  }
+  /* .b {
+    display: inline-flex;
+    flex-direction: row;
+    order: 1;
+    align-items: stretch;
+    width: 72%;
+    justify-content: space-around;
+  }
+  .c {
+    display: inline-flex;
+    flex-direction: row;
+    order: 2;
+    align-items: stretch;
+    width: 23%;
+    justify-content: space-around;
+  } */
+}
